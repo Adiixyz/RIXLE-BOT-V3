@@ -65,13 +65,14 @@ Hello undefined, ${ucapan()}
 *Hosted using:* replit.com
 *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Ｃｈａｒｇｉｎｇ' : '⚡ Discharging' }` : 'Not detected'}
 *Database:* MONGODB
+*Source code:* github.com/Nurutomo/wabot-aq
 
 *Ｓｔａｔｕｓ ｏｔｈｅｒ:*
 *Islam calender:* ${dateIslamic}
 *Calender:* ${week} ${weton} ${date}
 
-_This bot is under development!_
-_Some features not work_`
+_AdyyBot is recoded from *wabot-aq*_
+_Folder plugins renamed to commands_`
 
 conn.send2ButtonLoc( m.chat, await ( await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7EnNkFf8-jer8k6eT_gd9butzTdl-s91uPaEhL-ggw3-h8T90x-h8Z66&s=10')).buffer(), capt, userbot.packname, `All features`, `menu`, `Rules`, `rules`, m)
 
