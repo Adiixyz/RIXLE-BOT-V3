@@ -56,6 +56,7 @@ stats = `
 *› Total Chats :* ${totalChat.length}
 *› Speed :* ${latensi.toFixed(4)} ms
 *› Runtime :* ${count(uptime)}
+
 *_Phone Stats_*
 *› Batterai:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Ｃｈａｒｇｉｎｇ' : '⚡ Discharging' }` : '_♻️Mengambil data_'}
 *› Penggunaan Ram :* ${ram2}
@@ -217,22 +218,8 @@ let d = new Date(new Date + 3600000)
 const rawwr = Object.keys(global.Events)
 const menu = {
 
-before: `*${me}*
-*Name:* ${name}
-
-*Ｓｔａｔｕｓ Ｂｏｔ:*
-*› Runtime:* ${count(uptime)}
-*› Uptime:* ${count(os.uptime())}
-*› Hostname:* ${os.hostname()}
-*› Total Fitur:* *${Object.keys(Events).length}* fitur
-
-*ｓｔａｔｕｓ ｎｏｗ:*
-*› Jam:* ${time}
-*› Kalender islam:* ${dateIslamic}
-*› Kalender Java:* ${week} ${weton} ${date}
-
-*› Grup:*\n${package.linkgc.gc1}
-*› Github:*\nhttps://github.com/Arifirazzaq2001/RIXLE-BOT-V3`.trimStart(),
+before: `Silahkan liat:v
+`.trimStart(),
 type: "*#type*\n",
 after: "\n"
 }
@@ -323,12 +310,12 @@ break;
 
    case "creator":
 conarray = []
-ownerContact = ['6281261324817', '6282328303332', '62822980698995','6285783417029','62823283033323','6285640020165','6281261324817','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
+ownerContact = ['60199782326','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
   for (let i of ownerContact.map(v => v + '@s.whatsapp.net')) {
  vname = conn.contacts[i] != undefined ? conn.contacts[i].vname || conn.contacts[i].notify : undefined
   conarray.push({
-"displayName": 'Arifi Razzaq',
-"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${conn.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+"displayName": 'Dyy',
+"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Adii\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
 conn.sendMessage(m.chat, {
