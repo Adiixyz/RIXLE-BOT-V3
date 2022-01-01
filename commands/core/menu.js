@@ -50,30 +50,30 @@ let d = new Date(new Date + 3600000)
     let me = conn.user.name
 let capt = `*${me}*
 
-Hello ${name} ${ucapan()}
+Hello undefined, ${ucapan()}
 
 *Ｂｏｔ ｓｔａｔｕｓ:*
 *Runtime:* ${count(uptime)}
 *Speed:* ${latensi.toFixed(4)} ms
 *Host:* ${os.hostname()}
-*Total Feature:* ${Object.keys(Events).length}
-*Group Chats:* ${groups.length}
-*Private Chats :* ${privat.length}
+*Total feature:* ${Object.keys(Events).length}
+*Group chats:* ${groups.length}
+*Private chats :* ${privat.length}
 *Ram:* ${ram2}
 *Device:* ${os.platform()}
+*Bot device:* OPPO CPH1715
+*Hosted using:* replit.com
 *Battery:* ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 Ｃｈａｒｇｉｎｇ' : '⚡ Discharging' }` : 'Not detected'}
+*Database:* MONGODB
 
 *Ｓｔａｔｕｓ ｏｔｈｅｒ:*
-*Islam Calender:* ${dateIslamic}
-*calender:* ${week} ${weton} ${date}
+*Islam calender:* ${dateIslamic}
+*Calender:* ${week} ${weton} ${date}
 
-*Found Bug?*
-${userbot.prefix}report text
+_This bot is under development!_
+_Some features not work_`
 
-*Click the menu button below*`
-
-m.reply('Getting data to view Menu')
-conn.send2ButtonLoc( m.chat, await ( await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7EnNkFf8-jer8k6eT_gd9butzTdl-s91uPaEhL-ggw3-h8T90x-h8Z66&s=10')).buffer(), capt, userbot.packname, `Menu`, `menu`, `Rules`, `rules`, m)
+conn.send2ButtonLoc( m.chat, await ( await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE7EnNkFf8-jer8k6eT_gd9butzTdl-s91uPaEhL-ggw3-h8T90x-h8Z66&s=10')).buffer(), capt, userbot.packname, `All features`, `menu`, `Rules`, `rules`, m)
 
 }
 }
@@ -105,16 +105,19 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari"
   if (time >= 4) {
-    res = "Good Morning🌄"
+    res = "Good morning"
   }
   if (time > 10) {
-    res = "good afternoon"
+    res = "Good morning"
   }
   if (time >= 15) {
-    res = "good afternoon"
+    res = "Good afternoon"
   }
   if (time >= 18) {
-    res = "good evening"
+    res = "Good evening"
+  }
+  if (time >= 20) {
+    res = "Good night"
   }
   return res
 }
