@@ -1,5 +1,5 @@
 {
-  "name": "Rixle Bot",
+  "name": "Bot",
   "version": "1.8.1",
   "description": "WhatsApp Bot Nodejs",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "whatsapp-bot"
   ], 
   "linkgc": {
-  "gc1": "https://chat.whatsapp.com/D75oLHFNUXQCenRThcKUD1"
+  "gc1": "gada"
   },
   "author": "FearTeam",
   "bugs": {
