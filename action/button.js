@@ -6,8 +6,8 @@ const { MessageType }= require('@adiwajshing/baileys'),
       tags = {},
       speed = global.Ft['speed'],
       os = global.Ft['os'],
-      { tiktok } = require("../../Lib/scrape.js"),
-      { tiktokmusic } = require("../../Lib/scrape")
+      { tiktok } = require("../Lib/scrape"),
+      { tiktokmusic } = require("../Lib/scrape")
       package = require('../../package.json')
       changelog = require('../../changelog.json')
 
