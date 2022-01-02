@@ -8,8 +8,8 @@ const { MessageType }= require('@adiwajshing/baileys'),
       os = global.Ft['os'],
       { tiktok } = require("../Lib/scrape"),
       { tiktokmusic } = require("../Lib/scrape")
-      package = require('../../package.json')
-      changelog = require('../../changelog.json')
+      package = require('../package.json')
+      changelog = require('../changelog.json')
 
 module.exports = {
 async execute(m, {button, args, text }) {
