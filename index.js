@@ -62,7 +62,7 @@ let [ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm] = test
     magick,
     gm
   }
-  require('../../Lib/sticker').support = s
+  require('./Lib/sticker').support = s
   Object.freeze(global.support)
 
   if (!s.ffmpeg) conn.logger.warn('Silakan instal ffmpeg untuk mengirim video (pkg install ffmpeg)')
@@ -76,10 +76,10 @@ _quickTest()
 
 conn.version = [ 2, 2140, 12 ]
 conn.logger.level = "warn"
-conn.browserDescription = ['Rixle Type 3', 'SAFARI', '8.1']
+conn.browserDescription = ['AdyyBot 3', 'SAFARI', '8.1']
 
 // Mengurangi logger mempercepat Balas Pesan Fixed @arifirazzaq2001
-if (fs.existsSync(global.write.words.qrcode)) conn.loadAuthInfo(global.write.words.qrcode)
+if (fs.existsSync('./session.json')) conn.loadAuthInfo('./session.json')
 conn.on('qr', qr => {
  conn.logger.warn(botuser.simple.expiredQr)
   })
@@ -89,7 +89,7 @@ conn.on('qr', qr => {
       conn.on("ws-close", () => {})
        conn.on("close", () => {}) 
 const authInfo = conn.base64EncodedAuthInfo() 
-fs.writeFileSync(global.write.words.qrcode, JSON.stringify(authInfo, null, '\t'))
+fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t'))
 
 console.clear()
 conn.logger.warn(botuser.simple.refresh)
