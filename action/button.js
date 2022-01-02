@@ -249,7 +249,7 @@ return `${l++}. ` + userbot.prefix + menu.help
 after
 ].join("\n\n")
 
-conn.send3ButtonLoc(m.chat, await (await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrF6fyFoGCHmsmOXWjFxIXh-467D1nRhA4mQ&usqp=CAU')).buffer(), text, userbot.packname, `📑dashboard`, `dashboard`, `📋ketentuan dan syarat`, `rules`, `Changelog`, `changelog`, m)
+conn.send3ButtonLoc(m.chat, await (await fetch('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrF6fyFoGCHmsmOXWjFxIXh-467D1nRhA4mQ&usqp=CAU')).buffer(), text, 'AdyyBot', `📑dashboard`, `dashboard`, `📋ketentuan dan syarat`, `rules`, `Changelog`, `changelog`, m)
 break;
 
    case "rules":
